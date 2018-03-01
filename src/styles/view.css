@@ -1,0 +1,124 @@
+.view-wrap {
+    max-width: 750px;
+    width: auto;
+    height: auto;
+    min-height: 600px;
+    /* background-image: linear-gradient(45deg,#f5f5f5 25%,transparent 0,transparent 75%,#f5f5f5 0),linear-gradient(45deg,#f5f5f5 25%,transparent 0,transparent 75%,#f5f5f5 0); */
+    background-position: 0 0,16px 16px;
+    background-size: 32px 32px;
+    -webkit-transform-origin: center top;
+    transform-origin: center top;
+    position: relative;
+    border: 1px solid #eee;
+}
+.view-wrap .input-stage input,
+.view-wrap .input-stage textarea
+{
+    background-color: #fff;
+    cursor: default;
+}
+.view-wrap .ruler-line {
+        position: absolute;
+        display: block;
+        border: 0.5px dashed red;
+        z-index: 1000;
+}
+.view-wrap .x-line {
+    left: 0;
+    height: 100%;
+}
+.view-wrap .y-line {
+    top: 0;
+    width: 100%;
+}
+.view-wrap .center-line {
+    height: 100%;
+    left: 50%;
+}
+.view-wrap .editor-text {
+    height: 100%;
+    /* overflow: hidden; */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 5px;
+}
+
+/*
+ * 控制线样式
+*/
+.editor-able .component-handle-wrap {
+    pointer-events: none;
+}
+.component-handle-wrap {
+    position: absolute;
+    overflow: visible;
+    /* pointer-events: none; */
+    background: 0 0;
+    cursor: move;
+    border: 1px solid #ff8533;
+    z-index: 1000;
+}
+.component-handle-wrap .handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff8533;
+    border-radius: 2px;
+    pointer-events: all;
+}
+.component-handle-wrap .handle-n {
+    left: 50%;
+    top: 0px;
+    margin-left: -5px;
+    margin-top: -5px;
+    cursor: n-resize;
+}
+.component-handle-wrap .handle-s {
+    left: 50%;
+    bottom: 0;
+    margin-left: -5px;
+    margin-bottom: -5px;
+    cursor: s-resize;
+}
+.component-handle-wrap .handle-w {
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    margin-left: -5px;
+    cursor: w-resize;
+}
+.component-handle-wrap .handle-e {
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+    margin-right: -5px;
+    cursor: e-resize;
+}
+.component-handle-wrap .handle-nw {
+    left: 0;
+    top: 0px;
+    margin-left: -5px;
+    margin-top: -5px;
+    cursor: nw-resize;
+}
+.component-handle-wrap .handle-ne {
+    right: 0;
+    top: 0px;
+    margin-right: -5px;
+    margin-top: -5px;
+    cursor: ne-resize;
+}
+.component-handle-wrap .handle-sw {
+    left: 0;
+    bottom: 0;
+    margin-left: -5px;
+    margin-bottom: -5px;
+    cursor: sw-resize;
+}
+.component-handle-wrap .handle-se {
+    right: 0;
+    bottom: 0;
+    margin-right: -5px;
+    margin-bottom: -5px;
+    cursor: se-resize;
+}

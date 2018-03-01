@@ -1,0 +1,20 @@
+.panel-wrap {
+    min-height: 300px;
+}
+.panel-wrap .info-text {
+    min-width: 100px;
+    max-width: 200px;
+    width: 100%;
+}
+.panel-wrap .info-slider {
+    max-width: 200px;
+    width: auto;
+}
+.panel-wrap .separator-line {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+.attribute-page-wrap {
+    padding-left: 15px;
+    min-height: 300px;
+}
